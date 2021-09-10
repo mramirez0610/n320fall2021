@@ -3,7 +3,7 @@ class Instrument
     constructor(loudness, family, verb)
     {
         this.family = family;
-        this.verb = verb;
+        this.verb = verb; 
         this.loudness = loudness;
     }
 
