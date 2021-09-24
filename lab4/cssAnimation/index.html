@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <title>CSS animation</title>
+
+    <style>
+        h1{
+            color:#5C61FF;
+            margin-left: 25px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .header{
+            background-color:#5C61FF;
+            width: 825px;
+            height: 90px;
+            margin-bottom: 50px;
+        }
+
+        .blockStyle{
+            display: grid;
+            grid-gap: 25px;
+            grid-template-columns: 250px 250px 250px;
+        }
+
+        .cssBlocks{
+            margin-left: 25px;
+            background-color: #D894FF;
+            height: 100px;
+            width: 200px;
+        }
+
+        .cssBlocks:hover{
+            background-color: #EFD4FF;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 id="jsH1">CSS animation</h1>
+    <div class="header" id="jsHeader"> </div>
+
+    <div class="blockStyle">
+        <div class="cssBlocks" onclick="exitAni()"> </div>
+        <div class="cssBlocks" onclick="exitAni()"> </div>
+        <div class="cssBlocks" onclick="exitAni()"> </div>
+        <div class="cssBlocks" onclick="exitAni()"> </div>
+        <div class="cssBlocks" onclick="exitAni()"> </div>
+        <div class="cssBlocks" onclick="exitAni()"> </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="js/animation.js"></script>
+</body>
+</html>
